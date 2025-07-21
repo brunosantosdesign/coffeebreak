@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
@@ -10,6 +11,9 @@
   <title>CoffeeBreak - a melhor seleção de cafés gourmet e delícias artesanais, entregues na sua porta.</title>
 
   <link rel="stylesheet" href="./css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  
 </head>
 <body>
   <header>
@@ -17,6 +21,9 @@
       <a href="index.html" class="logo">
         <img src="./img/logo.svg" alt="Logo CoffeeBreak">
       </a>
+
+      
+
       <nav id="right">
         <ul>
           <li>
@@ -33,14 +40,20 @@
           </li>
         </ul>
       </nav>
-      <div class="icon-cesta-login">
-        <a href="#">
-          <img src="./img/icon/bag.svg" alt="Icone de Sacola">
-        </a>
-        <a href="#">
-          <img src="./img/icon/user.svg" alt="Icone de Login">
-        </a>
+
+      <div class="menu-actions">
+        <div class="icon-cesta-login">
+          <a href="#">
+            <img src="./img/icon/bag.svg" alt="Icone de Sacola">
+          </a>
+          <a href="#">
+            <img src="./img/icon/user.svg" alt="Icone de Login">
+          </a>
+        </div>
+        <div class="btn-menu-mobile" id="btn-menu">&#9776;</div>
       </div>
+      
+      
       
     </div>
   </header>
@@ -48,7 +61,9 @@
   <main class="intro">
     <div class="container">
 
-      <div class="left">
+      <div class="left" data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
         <h1>Desperte seu paladar com o <span>CoffeeBreak</span></h1>
         <p>A melhor seleção de cafés gourmet e delícias artesanais, entregues na sua porta.</p>
         <button>
@@ -56,7 +71,9 @@
         </button>
       </div>
 
-      <div class="right-intro">
+      <div class="right-intro" data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
         <img src="./img/imagem-intro.png" alt="Imagem de uma xicara com uma bebida de café gourmet">
       </div>
     </div>
@@ -64,10 +81,16 @@
 
   <section class="produtos">
     <div class="container">
-      <h2>Nossos Produtos</h2>
-      <p>Descubra a nossa coleção exclusiva de cafés especiais, cuidadosamente selecionados para oferecer uma experiência única de sabor e aroma.</p>
+      <h2 data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">Nossos Produtos</h2>
+      <p data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1200">Descubra a nossa coleção exclusiva de cafés especiais, cuidadosamente selecionados para oferecer uma experiência única de sabor e aroma.</p>
 
-      <div class="card-container">
+      <div class="card-container" data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
         
         <div class="card-produto">
           <img src="./img/produtos/produto01.jpg" alt="Foto café 01">
@@ -187,9 +210,14 @@
     <div class="container">
       <p><span>© 2023 CoffeeBreak.</span> Todos os direitos reservados.</p>
       <p><span>Desenvolvido por:</span> Bruno Araujo - 1º DSM - FATEC PG</p>
-      <p><span>Design por:</span> Bruno Araujo - 1º DSM - FATEC PG</p>
     </div>
   </div>
+
+  <script src="./script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>
