@@ -36,7 +36,7 @@ Recentemente, revisitei este projeto com o objetivo de:
 ---
 
 ## 📸 Prévia do Projeto:
-![CoffeeBreak Preview](./img/preview_coffeebreak.png)
+![CoffeeBreak Preview](./preview_coffeebreak.png)
 
 ---
 
